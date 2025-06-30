@@ -153,3 +153,21 @@ footer {
 .work-section a:hover {
   text-decoration: underline;
 }
+/* --- Send button style --- */
+.btn-send {
+  background-color: #1e90ff;     /* bright accent */
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  margin-top: 0.5rem;            /* space above button */
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  background-color: #0a70d1;     /* darker on hover */
+}
+
