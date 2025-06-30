@@ -1,0 +1,155 @@
+/* Reset spacing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background and font setup */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* W3Schools recommended font stack */
+  background: linear-gradient(to bottom right, #add8e6, #f0f8ff); /* Light blue gradient */
+  color: #0a1a2f; /* Dark navy blue text */
+  padding-top: 80px; /* Space for the fixed navbar */
+  line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0a1a2f; /* Dark navy */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Container inside the nav bar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  color: white;
+  font-size: 1.5em;
+}
+
+.logo .highlight {
+  color: #00bfff; /* Light blue highlight */
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main layout with two sections: text and image */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* About section with intro text */
+.about {
+  flex: 2;
+  min-width: 250px;
+}
+
+/* Profile image section on the right */
+.profile-image {
+  flex: 1;
+  min-width: 200px;
+  text-align: right;
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #0a1a2f;
+  font-size: 0.9em;
+}
+/* ===== Contact page ===== */
+.contact-section {
+  /* Centers everything inside the section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal centering */
+  justify-content: center;  /* vertical centering if the section is tall */
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 100px); /* keeps it roughly midway under the navbar */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;      /* controls how wide the form can grow */
+  text-align: left;      /* keep labels/inputs left-aligned inside */
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* ======= Work page layout ======= */
+.work-section {
+  /* Center all children horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers images, headings, paragraphs */
+  gap: 1.5rem;           /* even vertical spacing */
+  padding: 2rem 1rem;
+  max-width: 900px;      /* keeps long lines from stretching too wide */
+  margin: 0 auto;        /* centers the whole section on the page */
+  text-align: center;    /* centers paragraph text itself */
+}
+
+.work-section img {
+  width: 100%;
+  max-width: 500px;      /* prevents huge images on large screens */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.work-section a {
+  color: #1e90ff;        /* matches your highlight color */
+  text-decoration: none;
+}
+.work-section a:hover {
+  text-decoration: underline;
+}
